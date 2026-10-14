@@ -16,7 +16,7 @@
     "test": "esbuild test/index.test.ts --bundle --platform=node --format=esm --packages=external --outfile=.artifacts/tests.mjs && node --test .artifacts/tests.mjs"
   },
   "dependencies": {
-    "stripe": "^22.5.0"
+    "stripe": "^23.0.0"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "2.0.0-beta.sha-91c870c02",
