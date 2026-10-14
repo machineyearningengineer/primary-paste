@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup and troubleshooting
+    url: https://github.com/machineyearningengineer/primary-paste/blob/main/Docs/GettingStarted.md
+    about: Start with the local first-paste guide and permission checks.
+  - name: Security reporting
+    url: https://github.com/machineyearningengineer/primary-paste/blob/main/SECURITY.md
+    about: Keep private data and vulnerabilities out of public issues.

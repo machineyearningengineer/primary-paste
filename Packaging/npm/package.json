@@ -1,0 +1,51 @@
+{
+  "name": "@machineyearn/primary-paste",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Primary Paste for macOS: select text, middle-click to paste, keep your clipboard",
+  "license": "GPL-3.0-only",
+  "author": "Abel",
+  "homepage": "https://github.com/machineyearningengineer/primary-paste#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machineyearningengineer/primary-paste.git"
+  },
+  "bugs": {
+    "url": "https://github.com/machineyearningengineer/primary-paste/issues"
+  },
+  "keywords": [
+    "macos",
+    "clipboard",
+    "primary-selection",
+    "middle-click",
+    "productivity"
+  ],
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "arm64",
+    "x64"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "bin": {
+    "primary-paste": "launcher.cjs"
+  },
+  "files": [
+    "launcher.cjs",
+    "release.json",
+    "payload",
+    "README.md",
+    "LICENSE",
+    "SOURCE.txt"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.cjs"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  }
+}

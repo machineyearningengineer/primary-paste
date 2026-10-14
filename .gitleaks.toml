@@ -1,0 +1,11 @@
+[extend]
+useDefault = true
+
+# Exact synthetic input used to exercise secret-looking-text filtering.
+# Do not allowlist whole files or all generic-api-key findings.
+[[allowlists]]
+description = "Synthetic privacy-filter fixture, including its original history location"
+regexTarget = "line"
+paths = ['''PrimaryPasteTests/(PrivacyTests|PrimaryPasteCoreTests)\.swift$''']
+regexes = ['''assertDenied\(filter\.decision\(for: "api_key = abcdefghijklmnop123456"\)\)''']
+condition = "AND"

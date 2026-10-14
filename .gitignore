@@ -1,0 +1,16 @@
+.build/
+.swiftpm/
+build/
+DerivedData/
+*.xcuserdata/
+*.xcuserstate
+.DS_Store
+.artifacts/
+__pycache__/
+Backend/Licensing/node_modules/
+Backend/Licensing/.cloudflare/
+Backend/Licensing/worker-configuration.d.ts
+.dev.vars
+.env
+.env.*
+Docs/Media/Explainer/.tesseract-work/

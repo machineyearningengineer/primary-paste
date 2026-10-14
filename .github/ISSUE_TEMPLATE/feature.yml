@@ -1,0 +1,19 @@
+name: Feature idea
+description: Explain a workflow that could be easier.
+title: "[Idea] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: The workflow
+      description: What are you trying to do, and where does it become awkward?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe the behavior and any workaround. An implementation or generated patch is not needed.
+    validations:
+      required: true

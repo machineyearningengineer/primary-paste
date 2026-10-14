@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+        BA0200000000000000000001 /* PracticePageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0200000000000000000001 /* PracticePageCache.swift */; };
+        BA0200000000000000000002 /* PracticePageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0200000000000000000001 /* PracticePageCache.swift */; };
+		BA0100000000000000000001 /* SetupPracticeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0100000000000000000001 /* SetupPracticeCard.swift */; };
+		B00100000000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000001 /* AppDelegate.swift */; };
+		B00100000000000000000002 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000002 /* MenuBarController.swift */; };
+		B00100000000000000000019 /* PrimaryPasteIconRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001C /* PrimaryPasteIconRenderer.swift */; };
+		B0010000000000000000001A /* PrimaryPasteIconVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001D /* PrimaryPasteIconVariant.swift */; };
+		B00100000000000000000003 /* CaptureToastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000003 /* CaptureToastPresenter.swift */; };
+		B00100000000000000000004 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000004 /* SettingsWindowController.swift */; };
+		B00100000000000000000005 /* AccessibilityHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000005 /* AccessibilityHelpers.swift */; };
+		B00100000000000000000006 /* ClipboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000006 /* ClipboardObserver.swift */; };
+		B00100000000000000000007 /* ClipboardRestorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000007 /* ClipboardRestorer.swift */; };
+		B00100000000000000000008 /* EditableHitTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000008 /* EditableHitTester.swift */; };
+		B00100000000000000000009 /* MouseEventTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000009 /* MouseEventTap.swift */; };
+		B0010000000000000000000A /* PasteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000A /* PasteController.swift */; };
+		B0010000000000000000000B /* PermissionsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000B /* PermissionsCoordinator.swift */; };
+		B0010000000000000000000C /* SelectionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000C /* SelectionEngine.swift */; };
+		B00100000000000000000015 /* FileSelectionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000018 /* FileSelectionObserver.swift */; };
+		B0010000000000000000000D /* AppRulesEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000D /* AppRulesEngine.swift */; };
+		B0010000000000000000000E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000E /* AppState.swift */; };
+		B0010000000000000000000F /* InteractionDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000F /* InteractionDiagnostics.swift */; };
+		B00100000000000000000010 /* PreferencesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000010 /* PreferencesStore.swift */; };
+		B00100000000000000000011 /* PrimarySelectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000011 /* PrimarySelectionStore.swift */; };
+		B00100000000000000000012 /* PrivacyFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000012 /* PrivacyFilter.swift */; };
+		B00100000000000000000013 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000013 /* SettingsView.swift */; };
+		B00100000000000000000014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000014 /* Assets.xcassets */; };
+		B00100000000000000000016 /* SetupLaunchPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000019 /* SetupLaunchPolicy.swift */; };
+		B00100000000000000000017 /* ClipboardSuppressionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001A /* ClipboardSuppressionState.swift */; };
+		B00100000000000000000018 /* KeyboardShortcutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001B /* KeyboardShortcutController.swift */; };
+		B0010000000000000000001B /* SelectionIntentTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001E /* SelectionIntentTracker.swift */; };
+		B0010000000000000000001C /* SupportSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001F /* SupportSettingsView.swift */; };
+		B0010000000000000000001D /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000020 /* GeneralSettingsView.swift */; };
+		B0010000000000000000001E /* SelectionSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000021 /* SelectionSettingsView.swift */; };
+		B0010000000000000000001F /* PasteSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000022 /* PasteSettingsView.swift */; };
+		B00100000000000000000020 /* AppsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000023 /* AppsSettingsView.swift */; };
+		B00100000000000000000021 /* PrivacySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000024 /* PrivacySettingsView.swift */; };
+		B00100000000000000000022 /* ReadinessOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000025 /* ReadinessOverviewView.swift */; };
+		B00100000000000000000023 /* ManualVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000026 /* ManualVerificationView.swift */; };
+		B00100000000000000000024 /* ReadinessComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000027 /* ReadinessComponents.swift */; };
+		B00100000000000000000025 /* SettingsComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000028 /* SettingsComponents.swift */; };
+		B00100000000000000000026 /* SelectionPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000029 /* SelectionPreferences.swift */; };
+		B00100000000000000000027 /* ClipboardLinkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000002A /* ClipboardLinkMode.swift */; };
+		B00100000000000000000028 /* AppCompatibilityRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000002B /* AppCompatibilityRule.swift */; };
+		B00100000000000000000029 /* CaptureToastSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000002C /* CaptureToastSize.swift */; };
+		B0010000000000000000002A /* PasteMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000002D /* PasteMode.swift */; };
+		B0010000000000000000002B /* SupportReportBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000002E /* SupportReportBuilder.swift */; };
+		B0010000000000000000002C /* LaunchAtLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000002F /* LaunchAtLoginController.swift */; };
+		B00100000000000000000030 /* LicensingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000030 /* LicensingConfiguration.swift */; };
+		B00100000000000000000031 /* LicenseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000031 /* LicenseModels.swift */; };
+		B00100000000000000000032 /* LicenseKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000032 /* LicenseKeychain.swift */; };
+		B00100000000000000000033 /* EntitlementVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000033 /* EntitlementVerifier.swift */; };
+		B00100000000000000000034 /* LicensingAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000034 /* LicensingAPIClient.swift */; };
+		B00100000000000000000035 /* LicenseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000035 /* LicenseController.swift */; };
+		B00100000000000000000036 /* LicensingSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000036 /* LicensingSettingsView.swift */; };
+		B00100000000000000000037 /* DiagnosticEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000037 /* DiagnosticEvent.swift */; };
+		B00100000000000000000038 /* SupportActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000038 /* SupportActions.swift */; };
+		B00100000000000000000039 /* DiagnosticSinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000039 /* DiagnosticSinks.swift */; };
+		B00200000000000000000001 /* PrimaryPasteCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00200000000000000000001 /* PrimaryPasteCoreTests.swift */; };
+		B00200000000000000000002 /* AppRulesEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000D /* AppRulesEngine.swift */; };
+		B00200000000000000000003 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000E /* AppState.swift */; };
+		B00200000000000000000004 /* InteractionDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000F /* InteractionDiagnostics.swift */; };
+		B00200000000000000000005 /* PreferencesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000010 /* PreferencesStore.swift */; };
+		B00200000000000000000006 /* PrimarySelectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000011 /* PrimarySelectionStore.swift */; };
+		B00200000000000000000007 /* PrivacyFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000012 /* PrivacyFilter.swift */; };
+		B00200000000000000000008 /* ClipboardRestorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000007 /* ClipboardRestorer.swift */; };
+		B00200000000000000000009 /* SetupLaunchPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000019 /* SetupLaunchPolicy.swift */; };
+		B0020000000000000000000A /* ClipboardSuppressionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001A /* ClipboardSuppressionState.swift */; };
+		B0020000000000000000000B /* PrimaryPasteIconVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001D /* PrimaryPasteIconVariant.swift */; };
+		B0020000000000000000000C /* SelectionIntentTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001E /* SelectionIntentTracker.swift */; };
+		B0020000000000000000000D /* AccessibilityHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000005 /* AccessibilityHelpers.swift */; };
+		B0020000000000000000000E /* SelectionPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000029 /* SelectionPreferences.swift */; };
+		B0020000000000000000000F /* ClipboardLinkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000002A /* ClipboardLinkMode.swift */; };
+		B00200000000000000000010 /* AppCompatibilityRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000002B /* AppCompatibilityRule.swift */; };
+		B00200000000000000000011 /* CaptureToastSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000002C /* CaptureToastSize.swift */; };
+		B00200000000000000000012 /* PasteMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000002D /* PasteMode.swift */; };
+		B00200000000000000000024 /* EditableHitTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000008 /* EditableHitTester.swift */; };
+		B00200000000000000000013 /* AppRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00200000000000000000003 /* AppRulesTests.swift */; };
+		B00200000000000000000014 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00200000000000000000004 /* AppTests.swift */; };
+		B00200000000000000000015 /* ClipboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00200000000000000000005 /* ClipboardTests.swift */; };
+		B00200000000000000000016 /* PasteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00200000000000000000006 /* PasteTests.swift */; };
+		B00200000000000000000017 /* PreferencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00200000000000000000007 /* PreferencesTests.swift */; };
+		B00200000000000000000018 /* PrivacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00200000000000000000008 /* PrivacyTests.swift */; };
+		B00200000000000000000019 /* SelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00200000000000000000009 /* SelectionTests.swift */; };
+		B0020000000000000000001A /* SupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0020000000000000000000A /* SupportTests.swift */; };
+		B0020000000000000000001B /* LicensingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000030 /* LicensingConfiguration.swift */; };
+		B0020000000000000000001C /* LicenseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000031 /* LicenseModels.swift */; };
+		B0020000000000000000001D /* LicenseKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000032 /* LicenseKeychain.swift */; };
+		B0020000000000000000001E /* EntitlementVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000033 /* EntitlementVerifier.swift */; };
+		B0020000000000000000001F /* LicensingAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000034 /* LicensingAPIClient.swift */; };
+		B00200000000000000000020 /* LicenseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000035 /* LicenseController.swift */; };
+		B00200000000000000000021 /* DiagnosticEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000037 /* DiagnosticEvent.swift */; };
+		B00200000000000000000022 /* LicensingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0020000000000000000000B /* LicensingTests.swift */; };
+		B00200000000000000000023 /* DiagnosticSinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000039 /* DiagnosticSinks.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		PROXY00000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = PROJECT000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = TARGET0000000000000000001;
+			remoteInfo = "Primary Paste";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+        FA0200000000000000000001 /* PracticePageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticePageCache.swift; sourceTree = "<group>"; };
+		FA0100000000000000000001 /* SetupPracticeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPracticeCard.swift; sourceTree = "<group>"; };
+		F00100000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F00100000000000000000002 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		F0010000000000000000001C /* PrimaryPasteIconRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryPasteIconRenderer.swift; sourceTree = "<group>"; };
+		F0010000000000000000001D /* PrimaryPasteIconVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryPasteIconVariant.swift; sourceTree = "<group>"; };
+		F00100000000000000000003 /* CaptureToastPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureToastPresenter.swift; sourceTree = "<group>"; };
+		F00100000000000000000004 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		F00100000000000000000005 /* AccessibilityHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityHelpers.swift; sourceTree = "<group>"; };
+		F00100000000000000000006 /* ClipboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardObserver.swift; sourceTree = "<group>"; };
+		F00100000000000000000007 /* ClipboardRestorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardRestorer.swift; sourceTree = "<group>"; };
+		F00100000000000000000008 /* EditableHitTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableHitTester.swift; sourceTree = "<group>"; };
+		F00100000000000000000009 /* MouseEventTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseEventTap.swift; sourceTree = "<group>"; };
+		F0010000000000000000000A /* PasteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteController.swift; sourceTree = "<group>"; };
+		F0010000000000000000000B /* PermissionsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsCoordinator.swift; sourceTree = "<group>"; };
+		F0010000000000000000000C /* SelectionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionEngine.swift; sourceTree = "<group>"; };
+		F00100000000000000000018 /* FileSelectionObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSelectionObserver.swift; sourceTree = "<group>"; };
+		F0010000000000000000000D /* AppRulesEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRulesEngine.swift; sourceTree = "<group>"; };
+		F0010000000000000000000E /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		F0010000000000000000000F /* InteractionDiagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionDiagnostics.swift; sourceTree = "<group>"; };
+		F00100000000000000000010 /* PreferencesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesStore.swift; sourceTree = "<group>"; };
+		F00100000000000000000011 /* PrimarySelectionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarySelectionStore.swift; sourceTree = "<group>"; };
+		F00100000000000000000012 /* PrivacyFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyFilter.swift; sourceTree = "<group>"; };
+		F00100000000000000000013 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F00100000000000000000014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F00100000000000000000015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F00100000000000000000016 /* PrimaryPaste.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrimaryPaste.entitlements; sourceTree = "<group>"; };
+		F00100000000000000000017 /* Primary Paste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Primary Paste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00100000000000000000019 /* SetupLaunchPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupLaunchPolicy.swift; sourceTree = "<group>"; };
+		F0010000000000000000001A /* ClipboardSuppressionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardSuppressionState.swift; sourceTree = "<group>"; };
+		F0010000000000000000001B /* KeyboardShortcutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutController.swift; sourceTree = "<group>"; };
+		F0010000000000000000001E /* SelectionIntentTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionIntentTracker.swift; sourceTree = "<group>"; };
+		F0010000000000000000001F /* SupportSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportSettingsView.swift; sourceTree = "<group>"; };
+		F00100000000000000000020 /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
+		F00100000000000000000021 /* SelectionSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSettingsView.swift; sourceTree = "<group>"; };
+		F00100000000000000000022 /* PasteSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteSettingsView.swift; sourceTree = "<group>"; };
+		F00100000000000000000023 /* AppsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSettingsView.swift; sourceTree = "<group>"; };
+		F00100000000000000000024 /* PrivacySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySettingsView.swift; sourceTree = "<group>"; };
+		F00100000000000000000025 /* ReadinessOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadinessOverviewView.swift; sourceTree = "<group>"; };
+		F00100000000000000000026 /* ManualVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualVerificationView.swift; sourceTree = "<group>"; };
+		F00100000000000000000027 /* ReadinessComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadinessComponents.swift; sourceTree = "<group>"; };
+		F00100000000000000000028 /* SettingsComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsComponents.swift; sourceTree = "<group>"; };
+		F00100000000000000000029 /* SelectionPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPreferences.swift; sourceTree = "<group>"; };
+		F0010000000000000000002A /* ClipboardLinkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardLinkMode.swift; sourceTree = "<group>"; };
+		F0010000000000000000002B /* AppCompatibilityRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCompatibilityRule.swift; sourceTree = "<group>"; };
+		F0010000000000000000002C /* CaptureToastSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureToastSize.swift; sourceTree = "<group>"; };
+		F0010000000000000000002D /* PasteMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteMode.swift; sourceTree = "<group>"; };
+		F0010000000000000000002E /* SupportReportBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportReportBuilder.swift; sourceTree = "<group>"; };
+		F0010000000000000000002F /* LaunchAtLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginController.swift; sourceTree = "<group>"; };
+		F00100000000000000000030 /* LicensingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensingConfiguration.swift; sourceTree = "<group>"; };
+		F00100000000000000000031 /* LicenseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseModels.swift; sourceTree = "<group>"; };
+		F00100000000000000000032 /* LicenseKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseKeychain.swift; sourceTree = "<group>"; };
+		F00100000000000000000033 /* EntitlementVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitlementVerifier.swift; sourceTree = "<group>"; };
+		F00100000000000000000034 /* LicensingAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensingAPIClient.swift; sourceTree = "<group>"; };
+		F00100000000000000000035 /* LicenseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseController.swift; sourceTree = "<group>"; };
+		F00100000000000000000036 /* LicensingSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensingSettingsView.swift; sourceTree = "<group>"; };
+		F00100000000000000000037 /* DiagnosticEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticEvent.swift; sourceTree = "<group>"; };
+		F00100000000000000000038 /* SupportActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportActions.swift; sourceTree = "<group>"; };
+		F00100000000000000000039 /* DiagnosticSinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticSinks.swift; sourceTree = "<group>"; };
+		F00200000000000000000001 /* PrimaryPasteCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryPasteCoreTests.swift; sourceTree = "<group>"; };
+		F00200000000000000000002 /* PrimaryPasteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimaryPasteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00200000000000000000003 /* AppRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRulesTests.swift; sourceTree = "<group>"; };
+		F00200000000000000000004 /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
+		F00200000000000000000005 /* ClipboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardTests.swift; sourceTree = "<group>"; };
+		F00200000000000000000006 /* PasteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteTests.swift; sourceTree = "<group>"; };
+		F00200000000000000000007 /* PreferencesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTests.swift; sourceTree = "<group>"; };
+		F00200000000000000000008 /* PrivacyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyTests.swift; sourceTree = "<group>"; };
+		F00200000000000000000009 /* SelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTests.swift; sourceTree = "<group>"; };
+		F0020000000000000000000A /* SupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportTests.swift; sourceTree = "<group>"; };
+		F0020000000000000000000B /* LicensingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensingTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		PHASE00000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		PHASE00000000000000000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		GROUP00000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				GROUP00000000000000000003 /* PrimaryPaste */,
+				GROUP00000000000000000010 /* PrimaryPasteTests */,
+				GROUP00000000000000000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000017 /* Primary Paste.app */,
+				F00200000000000000000002 /* PrimaryPasteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000003 /* PrimaryPaste */ = {
+			isa = PBXGroup;
+			children = (
+				GROUP00000000000000000004 /* App */,
+				GROUP00000000000000000005 /* Features */,
+				GROUP00000000000000000006 /* Infrastructure */,
+				F00100000000000000000014 /* Assets.xcassets */,
+				F00100000000000000000015 /* Info.plist */,
+				F00100000000000000000016 /* PrimaryPaste.entitlements */,
+			);
+			path = PrimaryPaste;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000001 /* AppDelegate.swift */,
+				F0010000000000000000000E /* AppState.swift */,
+				F00100000000000000000019 /* SetupLaunchPolicy.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000005 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				GROUP00000000000000000011 /* AppRules */,
+				GROUP00000000000000000012 /* CaptureFeedback */,
+				GROUP00000000000000000013 /* Clipboard */,
+				GROUP00000000000000000014 /* Input */,
+				GROUP0000000000000000001D /* Licensing */,
+				GROUP00000000000000000015 /* MenuBar */,
+				GROUP00000000000000000016 /* Paste */,
+				GROUP00000000000000000017 /* Permissions */,
+				GROUP00000000000000000018 /* Selection */,
+				GROUP00000000000000000019 /* Settings */,
+				GROUP0000000000000000001A /* Support */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000006 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				GROUP0000000000000000001C /* LaunchAtLogin */,
+				GROUP0000000000000000001B /* Preferences */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000011 /* AppRules */ = {
+			isa = PBXGroup;
+			children = (
+				F0010000000000000000002B /* AppCompatibilityRule.swift */,
+				F0010000000000000000000D /* AppRulesEngine.swift */,
+				F00100000000000000000023 /* AppsSettingsView.swift */,
+			);
+			path = AppRules;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000012 /* CaptureFeedback */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000003 /* CaptureToastPresenter.swift */,
+				F0010000000000000000002C /* CaptureToastSize.swift */,
+			);
+			path = CaptureFeedback;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000013 /* Clipboard */ = {
+			isa = PBXGroup;
+			children = (
+				F0010000000000000000002A /* ClipboardLinkMode.swift */,
+				F00100000000000000000006 /* ClipboardObserver.swift */,
+				F00100000000000000000007 /* ClipboardRestorer.swift */,
+				F0010000000000000000001A /* ClipboardSuppressionState.swift */,
+			);
+			path = Clipboard;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000014 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				F0010000000000000000001B /* KeyboardShortcutController.swift */,
+				F00100000000000000000009 /* MouseEventTap.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000015 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000002 /* MenuBarController.swift */,
+				F0010000000000000000001C /* PrimaryPasteIconRenderer.swift */,
+				F0010000000000000000001D /* PrimaryPasteIconVariant.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000016 /* Paste */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000008 /* EditableHitTester.swift */,
+				F0010000000000000000000A /* PasteController.swift */,
+				F0010000000000000000002D /* PasteMode.swift */,
+				F00100000000000000000022 /* PasteSettingsView.swift */,
+			);
+			path = Paste;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000017 /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000005 /* AccessibilityHelpers.swift */,
+				F0010000000000000000000B /* PermissionsCoordinator.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000018 /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				F0010000000000000000000C /* SelectionEngine.swift */,
+				F00100000000000000000018 /* FileSelectionObserver.swift */,
+				F00100000000000000000011 /* PrimarySelectionStore.swift */,
+				F00100000000000000000012 /* PrivacyFilter.swift */,
+				F00100000000000000000024 /* PrivacySettingsView.swift */,
+				F0010000000000000000001E /* SelectionIntentTracker.swift */,
+				F00100000000000000000029 /* SelectionPreferences.swift */,
+				F00100000000000000000021 /* SelectionSettingsView.swift */,
+			);
+			path = Selection;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000019 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000020 /* GeneralSettingsView.swift */,
+				F00100000000000000000028 /* SettingsComponents.swift */,
+				F00100000000000000000013 /* SettingsView.swift */,
+				FA0100000000000000000001 /* SetupPracticeCard.swift */,
+				FA0200000000000000000001 /* PracticePageCache.swift */,
+				F00100000000000000000004 /* SettingsWindowController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		GROUP0000000000000000001A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000037 /* DiagnosticEvent.swift */,
+				F00100000000000000000039 /* DiagnosticSinks.swift */,
+				F0010000000000000000000F /* InteractionDiagnostics.swift */,
+				F00100000000000000000026 /* ManualVerificationView.swift */,
+				F00100000000000000000027 /* ReadinessComponents.swift */,
+				F00100000000000000000025 /* ReadinessOverviewView.swift */,
+				F0010000000000000000002E /* SupportReportBuilder.swift */,
+				F00100000000000000000038 /* SupportActions.swift */,
+				F0010000000000000000001F /* SupportSettingsView.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		GROUP0000000000000000001B /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000010 /* PreferencesStore.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		GROUP0000000000000000001C /* LaunchAtLogin */ = {
+			isa = PBXGroup;
+			children = (
+				F0010000000000000000002F /* LaunchAtLoginController.swift */,
+			);
+			path = LaunchAtLogin;
+			sourceTree = "<group>";
+		};
+		GROUP0000000000000000001D /* Licensing */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000033 /* EntitlementVerifier.swift */,
+				F00100000000000000000035 /* LicenseController.swift */,
+				F00100000000000000000032 /* LicenseKeychain.swift */,
+				F00100000000000000000031 /* LicenseModels.swift */,
+				F00100000000000000000034 /* LicensingAPIClient.swift */,
+				F00100000000000000000030 /* LicensingConfiguration.swift */,
+				F00100000000000000000036 /* LicensingSettingsView.swift */,
+			);
+			path = Licensing;
+			sourceTree = "<group>";
+		};
+		GROUP00000000000000000010 /* PrimaryPasteTests */ = {
+			isa = PBXGroup;
+			children = (
+				F00200000000000000000003 /* AppRulesTests.swift */,
+				F00200000000000000000004 /* AppTests.swift */,
+				F00200000000000000000005 /* ClipboardTests.swift */,
+				F00200000000000000000006 /* PasteTests.swift */,
+				F0020000000000000000000B /* LicensingTests.swift */,
+				F00200000000000000000007 /* PreferencesTests.swift */,
+				F00200000000000000000001 /* PrimaryPasteCoreTests.swift */,
+				F00200000000000000000008 /* PrivacyTests.swift */,
+				F00200000000000000000009 /* SelectionTests.swift */,
+				F0020000000000000000000A /* SupportTests.swift */,
+			);
+			path = PrimaryPasteTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TARGET0000000000000000001 /* Primary Paste */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CONFIGLIST00000000000000002 /* Build configuration list for PBXNativeTarget "Primary Paste" */;
+			buildPhases = (
+				PHASE00000000000000000001 /* Sources */,
+				PHASE00000000000000000002 /* Frameworks */,
+				PHASE00000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Primary Paste";
+			productName = "Primary Paste";
+			productReference = F00100000000000000000017 /* Primary Paste.app */;
+			productType = "com.apple.product-type.application";
+		};
+		TARGET0000000000000000002 /* PrimaryPasteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CONFIGLIST00000000000000003 /* Build configuration list for PBXNativeTarget "PrimaryPasteTests" */;
+			buildPhases = (
+				PHASE00000000000000000005 /* Sources */,
+				PHASE00000000000000000004 /* Frameworks */,
+				PHASE00000000000000000006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEPENDENCY0000000000000001 /* PBXTargetDependency */,
+			);
+			name = PrimaryPasteTests;
+			productName = PrimaryPasteTests;
+			productReference = F00200000000000000000002 /* PrimaryPasteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PROJECT000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					TARGET0000000000000000001 = {
+						CreatedOnToolsVersion = 26.5;
+						DevelopmentTeam = 3QWCJ2YP7J;
+					};
+					TARGET0000000000000000002 = {
+						CreatedOnToolsVersion = 26.5;
+						DevelopmentTeam = 3QWCJ2YP7J;
+						TestTargetID = TARGET0000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = CONFIGLIST00000000000000001 /* Build configuration list for PBXProject "PrimaryPaste" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = GROUP00000000000000000001;
+			productRefGroup = GROUP00000000000000000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TARGET0000000000000000001 /* Primary Paste */,
+				TARGET0000000000000000002 /* PrimaryPasteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		PHASE00000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00100000000000000000014 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		PHASE00000000000000000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		PHASE00000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00100000000000000000001 /* AppDelegate.swift in Sources */,
+				B00100000000000000000002 /* MenuBarController.swift in Sources */,
+				B00100000000000000000019 /* PrimaryPasteIconRenderer.swift in Sources */,
+				B00100000000000000000003 /* CaptureToastPresenter.swift in Sources */,
+				B00100000000000000000004 /* SettingsWindowController.swift in Sources */,
+				B00100000000000000000005 /* AccessibilityHelpers.swift in Sources */,
+				B00100000000000000000006 /* ClipboardObserver.swift in Sources */,
+				B00100000000000000000007 /* ClipboardRestorer.swift in Sources */,
+				B00100000000000000000017 /* ClipboardSuppressionState.swift in Sources */,
+				B00100000000000000000008 /* EditableHitTester.swift in Sources */,
+				B00100000000000000000018 /* KeyboardShortcutController.swift in Sources */,
+				B00100000000000000000009 /* MouseEventTap.swift in Sources */,
+				B0010000000000000000000A /* PasteController.swift in Sources */,
+				B0010000000000000000000B /* PermissionsCoordinator.swift in Sources */,
+				B0010000000000000000000C /* SelectionEngine.swift in Sources */,
+				B00100000000000000000015 /* FileSelectionObserver.swift in Sources */,
+				B0010000000000000000000D /* AppRulesEngine.swift in Sources */,
+				B0010000000000000000000E /* AppState.swift in Sources */,
+				B0010000000000000000000F /* InteractionDiagnostics.swift in Sources */,
+				B00100000000000000000010 /* PreferencesStore.swift in Sources */,
+				B0010000000000000000001A /* PrimaryPasteIconVariant.swift in Sources */,
+				B00100000000000000000011 /* PrimarySelectionStore.swift in Sources */,
+				B00100000000000000000012 /* PrivacyFilter.swift in Sources */,
+				B0010000000000000000001B /* SelectionIntentTracker.swift in Sources */,
+				B00100000000000000000016 /* SetupLaunchPolicy.swift in Sources */,
+				B00100000000000000000013 /* SettingsView.swift in Sources */,
+				BA0100000000000000000001 /* SetupPracticeCard.swift in Sources */,
+				BA0200000000000000000001 /* PracticePageCache.swift in Sources */,
+				B0010000000000000000001C /* SupportSettingsView.swift in Sources */,
+				B0010000000000000000001D /* GeneralSettingsView.swift in Sources */,
+				B0010000000000000000001E /* SelectionSettingsView.swift in Sources */,
+				B0010000000000000000001F /* PasteSettingsView.swift in Sources */,
+				B00100000000000000000020 /* AppsSettingsView.swift in Sources */,
+				B00100000000000000000021 /* PrivacySettingsView.swift in Sources */,
+				B00100000000000000000022 /* ReadinessOverviewView.swift in Sources */,
+				B00100000000000000000023 /* ManualVerificationView.swift in Sources */,
+				B00100000000000000000024 /* ReadinessComponents.swift in Sources */,
+				B00100000000000000000025 /* SettingsComponents.swift in Sources */,
+				B00100000000000000000026 /* SelectionPreferences.swift in Sources */,
+				B00100000000000000000027 /* ClipboardLinkMode.swift in Sources */,
+				B00100000000000000000028 /* AppCompatibilityRule.swift in Sources */,
+				B00100000000000000000029 /* CaptureToastSize.swift in Sources */,
+				B0010000000000000000002A /* PasteMode.swift in Sources */,
+				B0010000000000000000002B /* SupportReportBuilder.swift in Sources */,
+				B0010000000000000000002C /* LaunchAtLoginController.swift in Sources */,
+				B00100000000000000000030 /* LicensingConfiguration.swift in Sources */,
+				B00100000000000000000031 /* LicenseModels.swift in Sources */,
+				B00100000000000000000032 /* LicenseKeychain.swift in Sources */,
+				B00100000000000000000033 /* EntitlementVerifier.swift in Sources */,
+				B00100000000000000000034 /* LicensingAPIClient.swift in Sources */,
+				B00100000000000000000035 /* LicenseController.swift in Sources */,
+				B00100000000000000000036 /* LicensingSettingsView.swift in Sources */,
+				B00100000000000000000037 /* DiagnosticEvent.swift in Sources */,
+				B00100000000000000000038 /* SupportActions.swift in Sources */,
+				B00100000000000000000039 /* DiagnosticSinks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		PHASE00000000000000000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00200000000000000000001 /* PrimaryPasteCoreTests.swift in Sources */,
+				B00200000000000000000013 /* AppRulesTests.swift in Sources */,
+				B00200000000000000000014 /* AppTests.swift in Sources */,
+				B00200000000000000000015 /* ClipboardTests.swift in Sources */,
+				B00200000000000000000016 /* PasteTests.swift in Sources */,
+				B00200000000000000000017 /* PreferencesTests.swift in Sources */,
+				B00200000000000000000018 /* PrivacyTests.swift in Sources */,
+				B00200000000000000000019 /* SelectionTests.swift in Sources */,
+				B0020000000000000000001A /* SupportTests.swift in Sources */,
+				B0020000000000000000001B /* LicensingConfiguration.swift in Sources */,
+				B0020000000000000000001C /* LicenseModels.swift in Sources */,
+				B0020000000000000000001D /* LicenseKeychain.swift in Sources */,
+				B0020000000000000000001E /* EntitlementVerifier.swift in Sources */,
+				B0020000000000000000001F /* LicensingAPIClient.swift in Sources */,
+				B00200000000000000000020 /* LicenseController.swift in Sources */,
+				B00200000000000000000021 /* DiagnosticEvent.swift in Sources */,
+				B00200000000000000000022 /* LicensingTests.swift in Sources */,
+				B00200000000000000000023 /* DiagnosticSinks.swift in Sources */,
+				B00200000000000000000002 /* AppRulesEngine.swift in Sources */,
+				B00200000000000000000003 /* AppState.swift in Sources */,
+				B00200000000000000000004 /* InteractionDiagnostics.swift in Sources */,
+				B00200000000000000000005 /* PreferencesStore.swift in Sources */,
+				B0020000000000000000000B /* PrimaryPasteIconVariant.swift in Sources */,
+				B00200000000000000000006 /* PrimarySelectionStore.swift in Sources */,
+				B00200000000000000000007 /* PrivacyFilter.swift in Sources */,
+				B0020000000000000000000D /* AccessibilityHelpers.swift in Sources */,
+				B00200000000000000000008 /* ClipboardRestorer.swift in Sources */,
+				B0020000000000000000000C /* SelectionIntentTracker.swift in Sources */,
+				B00200000000000000000009 /* SetupLaunchPolicy.swift in Sources */,
+				BA0200000000000000000002 /* PracticePageCache.swift in Sources */,
+				B0020000000000000000000A /* ClipboardSuppressionState.swift in Sources */,
+				B0020000000000000000000E /* SelectionPreferences.swift in Sources */,
+				B0020000000000000000000F /* ClipboardLinkMode.swift in Sources */,
+				B00200000000000000000010 /* AppCompatibilityRule.swift in Sources */,
+				B00200000000000000000011 /* CaptureToastSize.swift in Sources */,
+				B00200000000000000000012 /* PasteMode.swift in Sources */,
+				B00200000000000000000024 /* EditableHitTester.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEPENDENCY0000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = TARGET0000000000000000001 /* Primary Paste */;
+			targetProxy = PROXY00000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CONFIG0000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CONFIG0000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CONFIG0000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PrimaryPaste/PrimaryPaste.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 3QWCJ2YP7J;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PrimaryPaste/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abel.primarypaste;
+				PRODUCT_NAME = "Primary Paste";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CONFIG0000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PrimaryPaste/PrimaryPaste.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 3QWCJ2YP7J;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PrimaryPaste/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abel.primarypaste;
+				PRODUCT_NAME = "Primary Paste";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CONFIG0000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QWCJ2YP7J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundlePackageType = BNDL;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abel.primarypaste.tests;
+				PRODUCT_MODULE_NAME = PrimaryPasteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CONFIG0000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QWCJ2YP7J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundlePackageType = BNDL;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abel.primarypaste.tests;
+				PRODUCT_MODULE_NAME = PrimaryPasteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CONFIGLIST00000000000000001 /* Build configuration list for PBXProject "PrimaryPaste" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CONFIG0000000000000000001 /* Debug */,
+				CONFIG0000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CONFIGLIST00000000000000002 /* Build configuration list for PBXNativeTarget "Primary Paste" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CONFIG0000000000000000003 /* Debug */,
+				CONFIG0000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CONFIGLIST00000000000000003 /* Build configuration list for PBXNativeTarget "PrimaryPasteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CONFIG0000000000000000005 /* Debug */,
+				CONFIG0000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PROJECT000000000000000001 /* Project object */;
+}

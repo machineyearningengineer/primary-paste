@@ -1,0 +1,32 @@
+{
+  "name": "primary-paste-licensing",
+  "private": true,
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "config": {
+    "d1DatabaseId": "00000000-0000-4000-8000-000000000000"
+  },
+  "scripts": {
+    "check": "npm run types && tsc --noEmit && npm test && cf deploy --dry-run",
+    "dev": "cf dev",
+    "types": "cf workers types",
+    "deploy": "cf deploy",
+    "db:migrate:local": "cf d1 migrations apply \"$npm_package_config_d1DatabaseId\" --local --persist-to .cloudflare/state",
+    "db:migrate:remote": "cf d1 migrations apply \"$npm_package_config_d1DatabaseId\"",
+    "test": "esbuild test/index.test.ts --bundle --platform=node --format=esm --packages=external --outfile=.artifacts/tests.mjs && node --test .artifacts/tests.mjs"
+  },
+  "dependencies": {
+    "stripe": "^22.5.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "2.0.0-beta.sha-91c870c02",
+    "@types/node": "^24.3.0",
+    "cf": "1.0.0-beta.14",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2",
+    "vite": "8.2.2"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

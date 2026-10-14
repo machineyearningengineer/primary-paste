@@ -1,0 +1,38 @@
+name: Bug report
+description: Report a reproducible problem with a small synthetic example.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic text and remove private content from reports and images. Security issues belong in SECURITY.md. External pull requests are not accepted during preview."
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Primary Paste version/build, macOS version, target app/version, and installation route.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the smallest synthetic example and the exact selection/paste gesture.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: Settings and permissions
+      description: Capture mode, clipboard mode, app rules, Accessibility and Input Monitoring state.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Checks and optional evidence
+      description: What did you personally reproduce? Mention material AI assistance and which claims you verified. Inspect attachments for private data.

@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  # Automatic runs are paused. Run the local gate with make check.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: Backend/Licensing/package-lock.json
+      - name: Install check prerequisites
+        run: brew install ripgrep gitleaks
+        env:
+          HOMEBREW_NO_AUTO_UPDATE: "1"
+      - run: ./Scripts/check.sh
+      - name: Scan complete Git history for secrets
+        run: gitleaks git --redact --no-banner .
