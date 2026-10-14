@@ -4,16 +4,9 @@ One native macOS app. Swift, AppKit and SwiftUI; no Node.js runtime or cloud ser
 
 ## Runtime flow
 
-```mermaid
-flowchart LR
-    A[Selection adapters] --> B[Privacy and app rules]
-    B --> C[PrimarySelectionStore]
-    D[Mouse or keyboard trigger] --> E[PasteController]
-    C --> E
-    E --> F[Editable target]
-    E --> G[ClipboardRestorer]
-    G --> F
-```
+![Selections pass through privacy and app rules into an in-memory store. A mouse or keyboard trigger starts paste delivery. Direct insertion avoids the clipboard; compatibility paste stages the selection, sends Command-V and conditionally restores the clipboard.](Media/architecture.svg)
+
+[View the diagram](Media/architecture.svg). Clipboard restoration happens after compatibility paste, only if the clipboard still contains our staged item.
 
 Selection capture and paste execution are separate. The store retains payloads in memory; a successful paste commits queue/stack/cycle progress. UI previews follow the same policy.
 

@@ -1,8 +1,14 @@
 # Changelog
 
-Notable changes are recorded here for people using the app. Version numbers follow [Semantic Versioning](https://semver.org/). Dates describe publication, not when a local build first passed.
+User-visible changes follow [Semantic Versioning](https://semver.org/).
 
-## Unreleased — 0.1.0 preview preparation
+## Unreleased
+
+- Fix the README icon and add direct preview downloads.
+- Update publication status and private security-reporting instructions.
+- Clarify the paste flow diagram and repository writing guidelines.
+
+## 0.1.0-preview.3 · 2026-10-14
 
 ### Added
 
@@ -34,4 +40,4 @@ Notable changes are recorded here for people using the app. Version numbers foll
 
 ### Release status
 
-No public release has been published. Current real-app evidence and remaining checks are listed in [Compatibility](Docs/Compatibility.md). Signing, notarization, installer validation and publication remain explicit release gates.
+[Unsigned preview 3](https://github.com/machineyearningengineer/primary-paste/releases/tag/v0.1.0-preview.3) includes the app ZIP, DMG, CLI, source and checksums. Signing and notarization are pending. See [Compatibility](Docs/Compatibility.md) for tested apps and remaining checks.

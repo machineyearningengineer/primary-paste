@@ -1,6 +1,6 @@
 # Installation
 
-**No notarized installer is available yet.** Build from source for local use. [Unsigned preview downloads](https://github.com/machineyearningengineer/primary-paste/releases) are inspection artifacts; each includes SHA-256 digests and corresponding source.
+**No notarized installer is available yet.** Build from source for local use. [Unsigned preview downloads](https://github.com/machineyearningengineer/primary-paste/releases) are inspection artifacts. The release includes SHA-256 checksums and corresponding source.
 
 Requires macOS 14+. Artifacts target Apple Silicon and Intel; real-app checks currently cover Apple Silicon.
 

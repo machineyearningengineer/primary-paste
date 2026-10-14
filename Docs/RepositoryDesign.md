@@ -1,15 +1,21 @@
-# Repository presentation
+# Repository style
 
-The repository is the product's public surface when publication is approved. No website is needed to understand the app or install it. The README gives the benefit, a visual explanation, honest installation status, a first successful paste and routes to deeper docs.
+The README explains the app, shows a real paste and links to downloads, setup and developer docs. Keep release status beside the downloads.
 
-Patterns reviewed on 2026-10-11:
+## Visuals
 
-- [Maccy](https://github.com/p0deje/Maccy): focused utility positioning and native screenshots.
-- [Ice](https://github.com/jordanbaird/Ice): direct app/Homebrew choices and a visible gallery, with development status stated.
-- [LocalSend](https://github.com/localsend/localsend): clear distribution choices, compatibility and developer entry points.
-- [KeyboardShortcuts](https://github.com/sindresorhus/KeyboardShortcuts): concise developer-facing usage and reference documentation.
-- [rdrop](https://github.com/machineyearningengineer/raindrop-cli): this maintainer's established scope, release packaging and distinction between checks and publication.
+- Use actual app screenshots and synthetic text. Crop unrelated desktop content.
+- Use the app icon, system typography, neutral backgrounds and a restrained green accent. Native macOS controls and cursor highlights keep their system colors.
+- Diagrams explain a specific flow. Use rounded boxes, readable labels and arrows that match the code; omit decorative illustrations.
+- Keep media and editable sources in `Docs/Media`. Record ownership and font licenses in [Media rights](Media/Rights.md).
+- Badges show platform, release status, license and contribution policy. Add counts or trust claims only when they are verifiable.
 
-The project uses a small set of meaningful badges. There are no fabricated download counts, testimonials, green CI claims, notarization badges or registry versions before those states exist. Private-repository CI/release badges are deliberately avoided because anonymous image requests can fail.
+## Writing
 
-Media stays local to the repository. The demo records an actual guest interaction with a visible cursor; timing and framing are edited for clarity. The onboarding image is an actual app screenshot. Editable sources and attribution are included. An eventual website can reuse these assets and guides without reorganizing the app.
+Use the [Wikipedia field guide to AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) as an editing reference, not an authorship test.
+
+- Say what the app does. Use concrete steps, short paragraphs and ordinary verbs.
+- Remove hype, vague claims, repeated conclusions and labels that add no information.
+- Use sentence-case headings. Reserve bold for a choice, control or warning the reader needs to find.
+- Keep limitations beside the relevant claim. Link to detailed evidence instead of repeating the audit.
+- Check every link, image and download before publishing. Release notes identify the exact build and its limits.

@@ -10,6 +10,7 @@ Real interaction, short captions, no stock art or soundtrack.
 | `onboarding.png` | Native Setup window, 880×712; no surrounding desktop. |
 | `first-paste.png` | Native Safari practice window after verified paste, 880×752. |
 | `icon.png` | Original app icon from `Scripts/generate_app_icon.swift`. |
+| `architecture.svg` | Editable vector diagram of capture, paste delivery and conditional clipboard restoration. |
 | `Explainer/Primary-Paste.tsrct` | Portable Tesseract 0.3.1 project with embedded footage/font and editable overlays. |
 | `Explainer/Footage/Demo.mp4` | Full 18.033-second guest recording, without audio. |
 | `Explainer/Fixtures/` | Original meeting-note HTML and TextEdit draft used for capture. |

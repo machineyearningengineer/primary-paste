@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title description">
+  <title id="title">Selection capture and paste delivery</title>
+  <desc id="description">Privacy rules filter selections before the in-memory store. Mouse or keyboard input starts the paste controller. Direct insertion leaves the clipboard alone. Compatibility paste stages the selection and sends Command-V, then restores the previous clipboard only if no newer copy has replaced it.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#69737a"/></marker>
+  </defs>
+  <rect width="960" height="520" rx="16" fill="#f7f8f8"/>
+  <g fill="none" stroke="#69737a" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M 280 96 H 364"/><path d="M 596 96 H 680"/>
+    <path d="M 796 136 V 222 H 596"/><path d="M 280 222 H 364"/>
+    <path d="M 430 262 V 292 H 264 V 316"/><path d="M 530 262 V 292 H 696 V 316"/>
+    <path d="M 264 388 V 420 H 364"/><path d="M 646 388 V 420 H 596"/>
+    <path d="M 746 388 V 448" stroke-dasharray="5 5"/>
+  </g>
+  <g stroke="#d6dcdf" stroke-width="1.5">
+    <rect x="48" y="56" width="232" height="80" rx="12" fill="#fff"/>
+    <rect x="364" y="56" width="232" height="80" rx="12" fill="#fff"/>
+    <rect x="680" y="56" width="232" height="80" rx="12" fill="#e8f3ee" stroke="#4f9f84"/>
+    <rect x="48" y="182" width="232" height="80" rx="12" fill="#fff"/>
+    <rect x="364" y="182" width="232" height="80" rx="12" fill="#e8f3ee" stroke="#4f9f84"/>
+    <rect x="148" y="316" width="232" height="72" rx="12" fill="#fff"/>
+    <rect x="580" y="316" width="232" height="72" rx="12" fill="#fff"/>
+    <rect x="364" y="392" width="232" height="56" rx="12" fill="#fff"/>
+    <rect x="630" y="448" width="232" height="48" rx="12" fill="#fff"/>
+  </g>
+  <g font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="19" fill="#272f34" text-anchor="middle">
+    <text x="164" y="89">Selection capture</text><text x="480" y="89">Privacy and app rules</text><text x="796" y="89">Selection store</text>
+    <text x="164" y="215">Mouse or keyboard</text><text x="480" y="215">Paste controller</text>
+    <text x="264" y="346">Direct insertion</text><text x="696" y="346">Compatibility paste</text>
+    <text x="480" y="427">Editable target</text><text x="746" y="478" font-size="17">Conditional restore</text>
+  </g>
+  <g font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14" fill="#5c666e" text-anchor="middle">
+    <text x="164" y="114">Accessibility adapters</text><text x="480" y="114">Filter before retaining</text><text x="796" y="114">In memory</text>
+    <text x="164" y="240">Middle-click or shortcut</text><text x="480" y="240">Recheck focus and permissions</text>
+    <text x="264" y="371">Clipboard unchanged</text><text x="696" y="371">Stage selection, then Command-V</text>
+  </g>
+</svg>

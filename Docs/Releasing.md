@@ -1,6 +1,6 @@
 # Releasing
 
-Local packaging does not publish anything. Public source and unsigned preview publication require the owner-run handoff; notarized app distribution is a later release. [Current checks and blockers](ReleaseReadiness.md).
+[Unsigned preview 3](https://github.com/machineyearningengineer/primary-paste/releases/tag/v0.1.0-preview.3) is public. Local packaging creates files; publishing is a separate step. [Current checks and blockers](ReleaseReadiness.md).
 
 ## Versions
 
@@ -17,7 +17,7 @@ make check
 make package-preview
 ```
 
-Patch: compatible fixes. Minor: compatible features. Major: incompatible behavior. Below 1.0, document breaking changes in minor versions. Increase the build for rebuilt distributions; never replace published artifacts. Tags use `v<version>`.
+Patch: compatible fixes. Minor: compatible features. Major: incompatible behavior. Below 1.0, document breaking changes in minor versions. Increase the build for rebuilt distributions; never replace published artifacts. Stable tags use `v<version>`; previews use `v<version>-preview.<build>`.
 
 Unsigned artifacts are marked `UNSIGNED-PREVIEW`. Their npm package stays private and refuses installation; no cask is generated.
 
@@ -57,7 +57,7 @@ Check npm authentication and scope access at publication time. The existing scop
 
 The initial public repository uses a clean source commit. The original repository and complete history remain private, including legacy media and internal QA records. Never mirror-push that private history into the public repository. Credentials need revocation as well as cleanup; rewriting commits does not revoke them.
 
-Automatic CI is paused. Both workflows are manual-only; the owner publication script disables hosted Actions entirely. Run `make check` locally. Preview packaging produces inspection artifacts only.
+GitHub Actions is disabled on both the public repository and private history archive. The workflow files use manual triggers for a future restart. Run `make check` locally.
 
 ## Source preview artifacts
 
